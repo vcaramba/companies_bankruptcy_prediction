@@ -1,12 +1,24 @@
 # companies_bankruptcy_prediction
 Bankruptcy prediction of Polish companies based on the dataset: https://archive.ics.uci.edu/ml/datasets/Polish+companies+bankruptcy+data
 
+Relevant paper:
+- Zieba, M., Tomczak, S. K., & Tomczak, J. M. (2016). Ensemble Boosted Trees with Synthetic Features Generation in Application to Bankruptcy Prediction. Expert Systems with Applications.
+
+Areas: finance, econometrics.
+
+Goals:
+1. select top-10 most significant features that lead to the more accurate prediction results;
+2. compare decision-tree based, NN, SVM, and kNN models performances;
+3. solve classification tasks:
+- binary classification (company did not bankrupt / bankrupted);
+- multi-class classification (6 classes - firm did not bankrupt or bankrupted after 1..5 years).
+
 Class values for binary classification:
 
 - 0 - company that did not bankrupt in the forecasting period
 - 1 - bankrupted company
 
-Class values for 5-class classification:
+Class values for 6-class classification:
 
 - 0 - company that did not bankrupt in the forecasting period
 - 1 - company bankrupted after 1 year
@@ -15,7 +27,7 @@ Class values for 5-class classification:
 - 4 - company bankrupted after 4 years
 - 5 - company bankrupted after 5 years
 
-Attribute Information:
+Synthetic attributes description:
 
 - X1 net profit / total assets
 - X2 total liabilities / total assets
