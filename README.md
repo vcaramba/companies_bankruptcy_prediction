@@ -6,6 +6,10 @@ Relevant paper:
 
 Areas: finance, econometrics.
 
+To run the notebooks from Docker:
+- docker-compose build
+- docker-compose up
+
 Goals:
 1. select top-10 most significant features that lead to the more accurate prediction results;
 2. compare decision-tree based, NN, SVM, and kNN models performances;
