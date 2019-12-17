@@ -3,7 +3,7 @@ FROM continuumio/miniconda3:4.3.27
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-COPY requirements.txt /usr/src/app/
+COPY . /usr/src/app/
 
 RUN apt-get update \
     && apt-get clean \
