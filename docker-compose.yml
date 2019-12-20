@@ -8,5 +8,5 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ~/Documents/notebooks:/usr/src/app/notebooks
+      - ~/Documents/jupyter_notebooks:/usr/src/app/jupyter_notebooks
     build: .

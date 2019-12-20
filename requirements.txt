@@ -3,4 +3,5 @@ pandas
 xgboost
 numpy
 scikit-learn
-pickle
+matplotlib
+seaborn
