@@ -3,8 +3,8 @@ from sklearn.feature_selection import SelectKBest
 
 
 def select_k_best(score, X, Y):
-    selector = SelectKBest(score, k=10)
-    X_new = selector.fit_transform(X, Y)
+    selector = SelectKBest(score, k=20)
+    selector.fit_transform(X, Y)
     names = X.columns.values[selector.get_support()]
     scores = selector.scores_[selector.get_support()]
     names_scores = list(zip(names, scores))

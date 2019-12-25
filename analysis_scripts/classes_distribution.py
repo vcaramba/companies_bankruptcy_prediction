@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
+import numpy as np
 
 def draw_pie_chart(df, fre):
     labels = df[fre].astype('category').cat.categories.tolist()
