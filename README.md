@@ -6,16 +6,22 @@ Relevant paper:
 
 Areas: finance, econometrics.
 
-To run the notebooks from Docker:
+To install all libraries and run the notebooks from Docker:
 - docker-compose build
 - docker-compose up
 
 Goals:
-1. select top-10 most significant features that lead to the more accurate prediction results;
-2. compare decision-tree based, NN, SVM, and kNN models performances;
-3. solve classification tasks:
-- binary classification (company did not bankrupt / bankrupted);
+1. find the subsets of the most significant features using different feature selection methods (Kendall's tau, mutual information, ANOVA);
+2. implement the model that performs well in solving 6-class classification task:
 - multi-class classification (6 classes - firm did not bankrupt or bankrupted after 1..5 years).
+
+Results:
+- random forest with maximum depth = 10 (parameter tuning using Grid Search) solves 6-class classification with area under the precision-recall curve **0.966** on the data that was:
+    1. cleaned from the missing values,
+    2. oversampled with SMOTE (Synthetic Minority Over-sampling Technique).
+
+![Alt text](models/pr_curve.png?raw=true)
+
 
 Class values for binary classification:
 
