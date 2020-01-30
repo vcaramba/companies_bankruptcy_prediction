@@ -16,7 +16,7 @@ Goals:
 - multi-class classification (6 classes - firm did not bankrupt or bankrupted after 1..5 years).
 
 Results:
-- random forest with maximum depth = 10 (parameter tuning using Grid Search) solves 6-class classification with area under the precision-recall curve **0.966** on the data that was:
+- random forest with maximum depth = 10 (parameter tuning using Grid Search) solves 6-class classification with area under the precision-recall curve **0.965** on the data that was:
     1. cleaned from the missing values,
     2. oversampled with SMOTE (Synthetic Minority Over-sampling Technique).
 
